@@ -71,7 +71,7 @@ bot.addListener("message", function(from, to, text, message) {
 									var a = Math.abs(temp[x])
 									for(var y in temp)
 									{
-										if (temp[y] >= a )
+										if (y!=x && temp[y] >= a )
 										{
 											temp[x] += a;
 											temp[y] -= a;
@@ -79,10 +79,10 @@ bot.addListener("message", function(from, to, text, message) {
 											break;
 										}
 									}
-								/*
 									for(var y in temp)
 									{
-										if (temp[x] < 0 )
+										var a = Math.abs(temp[x])
+										if (y!=x && temp[x] < 0 )
 										{
 											if (temp[y] > 0)
 											{
@@ -95,9 +95,9 @@ bot.addListener("message", function(from, to, text, message) {
 												}
 												else
 												{
+													bot.say(config.channels[0], x + "->" + y + " : " + temp[y]);
 													temp[x] += temp[y];
 													temp[y] -= temp[y];
-													bot.say(config.channels[0], x + "->" + y + " : " + temp[y]);
 										//			break;
 												}
 											}
@@ -105,7 +105,6 @@ bot.addListener("message", function(from, to, text, message) {
 										else
 											break;
 									}
-								*/	
 								
 								}
 	
