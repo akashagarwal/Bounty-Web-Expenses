@@ -11,14 +11,22 @@ Installation: npm install irc
 Run the bot : node bot.js
 
 
-<h5> Message Syntax : Give [nick] [amount] <h5>
+<h5> Message Syntax : 
+<ol>
+<li> Lend [nick] [amount] </li>
+<li> Borrow [nick] [amount] </li>
+<li> Repay [nick] [amount] </li>
+<li> Show - shows current settlements to be done </li>
+<li> History </li>
+</ol>
+</h5>
 
 
 Steps
 
 <ul>
 <li> First start the bot </li>
-<li> Connect ass many users as you want to the channel </li>
+<li> Connect as many users as you want to the channel </li>
 <li> Now start chatting, have fun and track expenses </li>
 </ul>
 
